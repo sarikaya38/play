@@ -1,0 +1,91 @@
+[
+  {
+    "description": "  As a user\n  I want to login into application",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-action;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 262759599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user goes to \"url\"",
+            "match": {
+              "location": "step-definitions\\login-step.js:36"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 666000,
+              "error_message": "ReferenceError: use is not defined\n    at World.<anonymous> (C:\\Users\\cansa\\Desktop\\udemy-playwright-cucumbe31232r\\step-definitions\\login-step.js:37:11)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First Name",
+                      "Last Name",
+                      "Mobile Number"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sinan",
+                      "SARIKAYA",
+                      "0522266654"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user fill mandatory fields",
+            "match": {
+              "location": "step-definitions\\login-step.js:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 98373199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-action",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login action",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
