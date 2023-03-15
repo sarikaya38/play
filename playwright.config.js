@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig, devices } = require('@playwright/test');
+const { defineConfig, devices } = require('@playwright/test')
 
 /**
  * Read environment variables from file.
@@ -19,7 +19,7 @@ module.exports = defineConfig({
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    timeout: 5000
+    timeout: 5000,
   },
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -45,11 +45,11 @@ module.exports = defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-     
       name: 'chromium',
-      use: { 
-        url: "https://demoqa.com/automation-practice-form",
-        ...devices['Desktop Chrome'] },
+      use: {
+        url: 'https://demoqa.com/automation-practice-form',
+        ...devices['Desktop Chrome'],
+      },
     },
 
     {
@@ -60,14 +60,14 @@ module.exports = defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
-    },  
-     {
-      name: 'test',
-      use: { 
-        url: "https://demoqa.com/automation-practice-form",
-        ...devices['Desktop Safari'] },
     },
-
+    {
+      name: 'test',
+      use: {
+        url: 'https://demoqa.com/automation-practice-form',
+        ...devices['Desktop Safari'],
+      },
+    },
 
     /* Test against mobile viewports. */
     // {
@@ -98,5 +98,4 @@ module.exports = defineConfig({
   //   command: 'npm run start',
   //   port: 3000,
   // },
-});
-
+})

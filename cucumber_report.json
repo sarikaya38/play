@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 262759599
+              "duration": 286273199
             }
           },
           {
@@ -23,12 +23,11 @@
             "line": 7,
             "name": "user goes to \"url\"",
             "match": {
-              "location": "step-definitions\\login-step.js:36"
+              "location": "step-definitions\\login-step.js:30"
             },
             "result": {
-              "status": "failed",
-              "duration": 666000,
-              "error_message": "ReferenceError: use is not defined\n    at World.<anonymous> (C:\\Users\\cansa\\Desktop\\udemy-playwright-cucumbe31232r\\step-definitions\\login-step.js:37:11)"
+              "status": "passed",
+              "duration": 797776100
             }
           },
           {
@@ -56,11 +55,12 @@
             "line": 8,
             "name": "user fill mandatory fields",
             "match": {
-              "location": "step-definitions\\login-step.js:44"
+              "location": "step-definitions\\login-step.js:36"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 161887499,
+              "error_message": "locator.click: Error: strict mode violation: locator('button') resolved to 7 elements:\n    1) <button class=\"hidden desktop:block\">…</button> aka locator('#header button').first()\n    2) <button class=\"desktop:block text-ltBlack-400 desktop:ml…>…</button> aka getByRole('button', { name: 'Resources' })\n    3) <button class=\"desktop:block text-ltBlack-400 desktop:ml…>…</button> aka getByRole('button', { name: 'Developers' })\n    4) <button class=\" desktop:block xlm:w-140 xl:w-120 w-110 d…>Book a Demo</button> aka getByRole('button', { name: 'Book a Demo' })\n    5) <button id=\"contbtn\" type=\"submit\" class=\"w-full xxl:py-…>SCHEDULE DEMO</button> aka getByText('SCHEDULE DEMO')\n    6) <button type=\"button\" id=\"showInput\" class=\"mt-20 mb-10 …>Get Checked value</button> aka getByRole('button', { name: 'Get Checked value' })\n    7) <button type=\"button\" class=\"mt-20 mb-10 bg-black text-w…>Get values</button> aka getByRole('button', { name: 'Get values' })\n\n=========================== logs ===========================\nwaiting for locator('button')\n============================================================\n    at World.<anonymous> (C:\\Users\\cansa\\Desktop\\udemy-playwright-cucumbe31232r\\step-definitions\\login-step.js:40:66)"
             }
           },
           {
@@ -68,7 +68,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 98373199
+              "duration": 60068400
             }
           }
         ],
